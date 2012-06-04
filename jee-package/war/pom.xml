@@ -1,0 +1,158 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
+         http://maven.apache.org/maven-v4_0_0.xsd">
+
+    <parent>
+        <groupId>com.oz</groupId>
+        <artifactId>jee-package</artifactId>
+        <version>1.0</version>
+    </parent>
+
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.oz</groupId>
+    <artifactId>war</artifactId>
+    <packaging>war</packaging>
+    <name>war</name>
+
+    <version>1.0</version>
+    <description />
+
+    <url>http://maven.apache.org</url>
+
+    <properties>
+
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+
+
+        <!-- Lib's -->
+        <junit.version>4.9</junit.version>
+        <hibernate.version>3.6.6.Final</hibernate.version>
+        <slf4j.version>1.6.1</slf4j.version>
+        <spring.framework.version>3.1.1.RELEASE</spring.framework.version>
+        <spring.security.version>3.1.0.RELEASE</spring.security.version>
+        <hsqldb.version>2.2.8</hsqldb.version>
+        <mysql.version>5.1.10</mysql.version>
+        <logback.version>0.9.17</logback.version>
+
+        <servlet-api.version>2.5</servlet-api.version>
+        <jstl.version>1.2</jstl.version>
+
+
+        <jetty.version>6.1.10</jetty.version>
+        <c3po.version>0.9.1.2</c3po.version>
+
+    </properties>
+
+    <repositories>
+
+        <!-- Spring repository -->
+        <repository>
+            <id>springsource-repo</id>
+            <name>SpringSource Repository</name>
+            <url>http://repo.springsource.org/release</url>
+        </repository>
+
+    </repositories>
+
+
+    <dependencies>
+
+        <dependency>
+            <groupId>com.oz</groupId>
+            <artifactId>ejb-jar</artifactId>
+            <type>ejb</type>
+            <version>1.0</version>
+        </dependency>
+
+
+        <!-- Test -->
+
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>${junit.version}</version>
+        </dependency>
+
+        <!-- Loggers -->
+
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-api</artifactId>
+            <version>${slf4j.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-simple</artifactId>
+            <version>${slf4j.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>jcl-over-slf4j</artifactId>
+            <version>${slf4j.version}</version>
+        </dependency>
+
+
+
+        <!-- Java API -->
+        <dependency>
+            <groupId>javax.servlet</groupId>
+            <artifactId>servlet-api</artifactId>
+            <version>${servlet-api.version}</version>
+            <scope>provided</scope>
+        </dependency>
+
+        <!-- JSTL -->
+        <dependency>
+            <groupId>javax.servlet</groupId>
+            <artifactId>jstl</artifactId>
+            <version>${jstl.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>taglibs</groupId>
+            <artifactId>standard</artifactId>
+            <scope>runtime</scope>
+            <version>1.1.1</version>
+        </dependency>
+        <dependency>
+            <groupId>taglibs</groupId>
+            <artifactId>c</artifactId>
+            <version>1.1.1</version>
+            <scope>runtime</scope>
+            <type>tld</type>
+        </dependency>
+        <dependency>
+            <groupId>taglibs</groupId>
+            <artifactId>fmt</artifactId>
+            <version>1.1.1</version>
+            <scope>runtime</scope>
+            <type>tld</type>
+        </dependency>
+
+    </dependencies>
+
+    <build>
+
+        <finalName>war</finalName>
+
+        <plugins>
+
+            <!-- Compiler -->
+
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>2.0.2</version>
+                <configuration>
+                    <source>1.6</source>
+                    <target>1.6</target>
+                </configuration>
+            </plugin>
+
+        </plugins>
+
+    </build>
+</project>
