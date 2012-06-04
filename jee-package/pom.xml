@@ -13,7 +13,16 @@
     <packaging>pom</packaging>
     <version>1.0</version>
 
-    <description />
+    <description>
+
+        See also:
+
+        - http://maven.apache.org/plugins/maven-ear-plugin/
+        - http://maven.apache.org/plugins/maven-ejb-plugin/ejb-mojo.html
+        - https://cwiki.apache.org/MAVEN/maven-3x-compatibility-notes.html#Maven3.xCompatibilityNotes-AutomaticPluginVersionResolution
+        - http://stackoverflow.com/questions/2429245/maven-repository-for-ejb-3-1-api
+
+    </description>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
