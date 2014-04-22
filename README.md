@@ -1,4 +1,4 @@
-Maven EAR Example (Java Enterprise Packaging )
+Java Enterprise Packaging
 =============
 
 A simple example to generate EAR (Enterprise Application Resources) with maven.
@@ -32,8 +32,7 @@ and people like you :) . Thank you!
 License
 -------
 
-**oz-sap-pi-organizer** is copyright 2014 by Jaehoo (Alberto Sánchez) and Orbital Zero,inc. It is free software, and may be
-redistributed under the terms specified in the `LICENSE` file.
+**This project** is copyright 2014 by Jaehoo (Alberto Sánchez) and Orbital Zero,inc. It is free software, and may be redistributed under the terms specified in the `LICENSE` file.
 
 The names and logos for this sample code are trademarks of their respective owners, which are in no way associated or affiliated with Orbital Zero. 
 Product names and logos are used solely for the purpose to show specific examples of software development, not for comercial use. Use of these names does not imply any co-operation or endorsement. 
