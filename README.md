@@ -3,7 +3,7 @@ Java Enterprise Packaging
 
 [![Build Status](https://travis-ci.org/jaehoo/oz-ex-mvn-jee-packaging.png?branch=master)](https://travis-ci.org/jaehoo/oz-ex-jasper-reports)
 
-A simple example to generate EAR (Enterprise Application Resources) with maven.
+A simple example to generate EAR (Enterprise Application Resources) with maven .
 
 Build
 -----------
