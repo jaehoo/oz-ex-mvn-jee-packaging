@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jboss-web>
+    <context-root>/MyWebapp</context-root>
+    <class-loading java2ClassLoadingCompliance="false">
+        <loader-repository>com.ph:loader=AppBuild
+            <loader-repository-config>java2ParentDelegation=false</loader-repository-config>
+        </loader-repository>
+    </class-loading>
+</jboss-web>

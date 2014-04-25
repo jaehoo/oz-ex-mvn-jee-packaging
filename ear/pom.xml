@@ -11,21 +11,22 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.oz</groupId>
-    <artifactId>ear</artifactId>
+    <artifactId>my-ear</artifactId>
     <packaging>ear</packaging>
-    <name>ear</name>
+    <name>my-ear</name>
     <version>1.0</version>
     <description />
+
     <dependencies>
         <dependency>
             <groupId>com.oz</groupId>
-            <artifactId>ejb-jar</artifactId>
+            <artifactId>my-ejb</artifactId>
             <type>ejb</type>
             <version>1.0</version>
         </dependency>
         <dependency>
             <groupId>com.oz</groupId>
-            <artifactId>war</artifactId>
+            <artifactId>my-war</artifactId>
             <type>war</type>
             <version>1.0</version>
         </dependency>
@@ -40,7 +41,7 @@
         </pluginRepository>
     </pluginRepositories>
     <build>
-        <finalName>publicator</finalName>
+        <finalName>my-ear</finalName>
         <plugins>
             <plugin>
                 <artifactId>maven-ear-plugin</artifactId>
@@ -48,16 +49,16 @@
                     <modules>
                         <ejbModule>
                             <groupId>com.oz</groupId>
-                            <artifactId>ejb-jar</artifactId>
+                            <artifactId>my-ejb</artifactId>
                         </ejbModule>
                         <webModule>
                             <groupId>com.oz</groupId>
-                            <artifactId>war</artifactId>
+                            <artifactId>my-war</artifactId>
                         </webModule>
                     </modules>
                     <jboss>
                         <version>4</version>
-                        <loader-repository>com.oz:archive=publicator.ear</loader-repository>
+                        <loader-repository>com.oz:archive=my-ear.ear</loader-repository>
                     </jboss>
                 </configuration>
             </plugin>
@@ -67,7 +68,7 @@
                 <version>1.2.2</version>
                 <configuration>
                     <container>
-                        <containerId>jboss4x</containerId>
+                        <!-- <containerId>jboss4x</containerId>-->
                         <type>remote</type>
                     </container>
                 </configuration>

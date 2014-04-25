@@ -12,9 +12,9 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.oz</groupId>
-    <artifactId>war</artifactId>
+    <artifactId>my-war</artifactId>
     <packaging>war</packaging>
-    <name>war</name>
+    <name>my-war</name>
 
     <version>1.0</version>
     <description />
@@ -63,7 +63,7 @@
 
         <dependency>
             <groupId>com.oz</groupId>
-            <artifactId>ejb-jar</artifactId>
+            <artifactId>my-ejb</artifactId>
             <type>ejb</type>
             <version>1.0</version>
             <scope>provided</scope>

@@ -1,8 +1,0 @@
-language: java
-script: mvn test
-jdk:
-  - openjdk6
-
-notifications:
-  email:
-  - jaehoo@gmail.com

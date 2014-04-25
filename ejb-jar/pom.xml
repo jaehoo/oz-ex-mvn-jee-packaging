@@ -11,8 +11,8 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.oz</groupId>
-    <artifactId>ejb-jar</artifactId>
-    <name>ejb-jar</name>
+    <artifactId>my-ejb</artifactId>
+    <name>my-ejb</name>
     <version>1.0</version>
     <packaging>ejb</packaging>
     <description />
