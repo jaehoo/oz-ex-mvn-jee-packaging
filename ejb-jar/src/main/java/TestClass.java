@@ -1,3 +1,5 @@
+import javax.ejb.Stateless;
+
 /**
  * Created with IntelliJ IDEA.
  * Date: 4/06/12
@@ -6,10 +8,13 @@
  * Twitter: @jaehoox
  * mail: <a href="mailto:jaehoo@gmail.com>jaehoo@gmail.com</a>
  */
-public class TestClass {
+
+@Stateless
+public class TestClass implements TestDaoLocal {
 
 
-    public static void main(String[] args) {
-        System.out.println("EJB Test Class!!");
+    @Override
+    public String getHello() {
+        return "HELLO WORLD";
     }
 }

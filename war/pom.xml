@@ -66,6 +66,7 @@
             <artifactId>ejb-jar</artifactId>
             <type>ejb</type>
             <version>1.0</version>
+            <scope>provided</scope>
         </dependency>
 
 

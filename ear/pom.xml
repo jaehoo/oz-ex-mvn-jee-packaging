@@ -40,7 +40,7 @@
         </pluginRepository>
     </pluginRepositories>
     <build>
-        <finalName>your-ear-name</finalName>
+        <finalName>publicator</finalName>
         <plugins>
             <plugin>
                 <artifactId>maven-ear-plugin</artifactId>
@@ -57,7 +57,7 @@
                     </modules>
                     <jboss>
                         <version>4</version>
-                        <loader-repository>com.oz:archive=your-ear-name.ear</loader-repository>
+                        <loader-repository>com.oz:archive=publicator.ear</loader-repository>
                     </jboss>
                 </configuration>
             </plugin>
